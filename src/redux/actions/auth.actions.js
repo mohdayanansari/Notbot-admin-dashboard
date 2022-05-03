@@ -6,7 +6,7 @@ export const LoginAction = (username, password, navigate) => async (dispatch) =>
   bodyFormData.append("username", username);
   bodyFormData.append("password", password);
   try {
-    console.log("action...");
+    // console.log("action...");
     const url = "https://test.notbot.in/super/login";
     const config = {
       headers: {
@@ -17,7 +17,7 @@ export const LoginAction = (username, password, navigate) => async (dispatch) =>
     // const response = await axios.post(url, { email, password });
     const response = await axios.post(url, bodyFormData, config);
 
-    console.log("response", response);
+    // console.log("response", response);
     dispatch({
       type: actionTypes.LOGIN,
       payload: response.data,

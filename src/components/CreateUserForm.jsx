@@ -30,7 +30,7 @@ const CreateUserForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("USER INPUT::", input);
+    // console.log("USER INPUT::", input);
     const url = "https://api.notbot.in/super/setup";
     const config = {
       headers: {
